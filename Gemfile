@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.5"
 
+gem "bootstrap-sass", "3.4.1"
 gem "rails", "~> 6.0.4", ">= 6.0.4.4"
 gem "sqlite3", "~> 1.4"
 gem "puma", "~> 4.1"
@@ -14,6 +15,7 @@ gem "redis", "~> 4.0"
 gem "bcrypt", "~> 3.1.7"
 gem "image_processing", "~> 1.2"
 gem "bootsnap", ">= 1.4.2", require: false
+gem "config"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

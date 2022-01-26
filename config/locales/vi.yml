@@ -1,0 +1,33 @@
+vi:
+  static_pages:
+    home:
+      title: "Trang chủ"
+      header1: "Chào mừng đến với Sample App"
+      header2a: "Đây là trang chủ trong"
+      header2b: "khóa học Ruby on Rails"
+      header2c: "sample application."
+      signup: "Đăng ký ngay!"
+    help:
+      title: "Trợ giúp"
+      header_help: "Trợ giúp"
+      content_help_first: "Nhận sự trợ giúp khóa học Ruby on Rails tại trang"
+      content_help_second: "Trang trợ giúp khóa học Rails"
+      content_help_third: "Để nhận sự trợ giúp trong app sample này, hãy xem"
+      content_help_fourth: "cuốn sách Ruby on Rails Tutorial"
+      content_help_fifth: " điện tử."
+    contact:
+      title: "Liên hệ"
+      header_contact: "Liên hệ"
+      greeting: "Xin chào Ruby"
+      inviting: "Liên hệ tôi theo số điện thoại: "
+      phone_number: "+84 86679 5522"
+  layouts:
+    application:
+      base_title: Khóa học Ruby on Rails với sample app"
+    shared:
+      header:
+        logo: "Ứng dụng mẫu"
+        menu_home: "Trang chủ"
+        menu_contact: "Liên hệ"
+        menu_help: "Trợ giúp"
+        menu_login: "Đăng nhập"

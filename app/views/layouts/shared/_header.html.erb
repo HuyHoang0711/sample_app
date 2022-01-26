@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="nav navbar-nav navbar-left language">
+    <%= link_to "en", locale: :en %> |
+    <%= link_to "vi", locale: :vi %>
+  </div>
+  <div class="container">
+    <%= link_to t(".logo"), root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t(".menu_home"), home_static_pages_path %></li>
+        <li><%= link_to t(".menu_contact"), contact_static_pages_path %></li>
+        <li><%= link_to t(".menu_help"), help_static_pages_path %></li>
+        <li><%= link_to t(".menu_login"), "#" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
