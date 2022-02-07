@@ -1,0 +1,10 @@
+<% provide :title, t(".title") %>
+<div class="center jumbotron">
+  <h1><%= t(".header1") %></h1>
+  <h2>
+    <%= t(".header2a") %>
+    <%= link_to t(".header2b"), Settings.url.rails_home %>
+    <%= t(".header2c") %>
+  </h2>
+  <%= link_to t(".signup"), "#", class: "btn btn-lg btn-primary" %>
+</div>
