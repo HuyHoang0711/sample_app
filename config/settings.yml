@@ -2,3 +2,8 @@ url:
   rails_home: "https://www.railstutorial.org/"
   rails_book: "https://www.railstutorial.org/book"
   rails_help: "https://www.railstutorial.org/help"
+digits:
+  digit_255: 255
+  digit_50: 50
+  digit_6: 6
+

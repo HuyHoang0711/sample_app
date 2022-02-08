@@ -21,6 +21,11 @@ vi:
       greeting: "Xin chào Ruby"
       inviting: "Liên hệ tôi theo số điện thoại: "
       phone_number: "+84 86679 5522"
+  users:
+    new:
+      title: "Người dùng mới"
+      header1: "Tạo người dùng mới cho ứng dụng mẫu"
+      content: "Người dùng bao gồm họ tên, email và mật khẩu!"
   layouts:
     application:
       base_title: Khóa học Ruby on Rails với sample app"
