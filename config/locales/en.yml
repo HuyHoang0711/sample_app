@@ -22,6 +22,11 @@ en:
       greeting: "Hello Ruby"
       inviting: "Contact me by phone number: "
       phone_number: "+1 (202) 861-0737"
+  users:
+    new:
+      title: "New User"
+      header1: "Create new user for Sample App"
+      content: "User has name, email and password!"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
