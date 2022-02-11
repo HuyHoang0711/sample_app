@@ -19,6 +19,27 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
 .language {
   display: flex;
   justify-content: space-between;
@@ -43,4 +64,99 @@ textarea {
 #logo:hover {
   color: $white;
   text-decoration: none;
+}
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $white_gray;
+  color: $gray;
+}
+footer a {
+  color: #medium_gray;
+}
+footer a:hover {
+  color: #dark_gray;
+}
+footer small {
+  float: left;
+}
+footer ul {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span{
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+  box-shadow: 2px 1px 7px $red_fire;
+}
+.gravatar_edit {
+  margin-top: 15px;
+}
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+input, textarea, select, .uneditable-input {
+  border: 1px solid $light_gray;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+input {
+  height: auto !important;
+}
+.sign_up{
+  float: left;
+  margin: auto;
+  border:1px solid $black;
+}
+#error_explanation {
+  color: $red;
+  ul {
+    color: $red;
+    margin: 0 0 30px 0;
+  }
+}
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }
