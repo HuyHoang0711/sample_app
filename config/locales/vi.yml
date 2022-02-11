@@ -1,4 +1,6 @@
 vi:
+  success: "Chào mừng đến với ứng dụng mẫu"
+  has_no_user: "Không tìm thấy người dùng"
   static_pages:
     home:
       title: "Trang chủ"
@@ -24,15 +26,56 @@ vi:
   users:
     new:
       title: "Người dùng mới"
-      header1: "Tạo người dùng mới cho ứng dụng mẫu"
+      header1: "Đăng ký"
       content: "Người dùng bao gồm họ tên, email và mật khẩu!"
+      submit_label: "Tạo tài khoản mới"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      header: "Đăng nhập vào ứng dụng mẫu"
   layouts:
     application:
-      base_title: Khóa học Ruby on Rails với sample app"
+      base_title: "Khóa học Ruby on Rails với sample app"
+    header:
+      logo: "Ứng dụng mẫu"
+      menu_home: "Trang chủ"
+      menu_help: "Trợ giúp"
+      menu_login: "Đăng nhập"
+    footer:
+      content_footer: "Khóa học Ruby on Rails"
+      author: "thực hiện bởi Michael Hartl"
+      menu_contact: "Liên hệ"
+      menu_about: "Về chúng tôi"
+      menu_news: "Tin tức"
     shared:
-      header:
-        logo: "Ứng dụng mẫu"
-        menu_home: "Trang chủ"
-        menu_contact: "Liên hệ"
-        menu_help: "Trợ giúp"
-        menu_login: "Đăng nhập"
+      error_messages:
+        form_contain: "Biểu mẫu gồm có %{er_count}."
+        error: "lỗi"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Họ tên"
+        email: "Địa chỉ email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        created_at: "Ngày lập"
+        updated_at: "Ngày cập nhập"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống!"
+              too_long: "không được vượt quá 50 ký tự!"
+            email:
+              blank: "không được để trống"
+              too_long: "không được vượt quá 255 ký tự!"
+              invalid: "định dạng không hợp lệ!"
+              taken: "đã tồn tại!"
+            password:
+              blank: "không được để trống!"
+              too_short: "tối thiểu 6 ký tự!"
+            password_confirmation:
+              confirmation: "không trùng với mật khẩu!"

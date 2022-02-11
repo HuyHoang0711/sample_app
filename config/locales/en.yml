@@ -1,4 +1,6 @@
 en:
+  success: "Welcome to the Sample App"
+  has_no_user: "No result for showing user"
   static_pages:
     base_title: "Ruby on Rails Tutorial Sample App"
     home:
@@ -25,15 +27,37 @@ en:
   users:
     new:
       title: "New User"
-      header1: "Create new user for Sample App"
+      header1: "Sign up"
       content: "User has name, email and password!"
+      submit_label: "Create my account"
+  sessions:
+    new:
+      title: "Log in"
+      header: "Log in to Sample App"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      logo: "Sample App"
+      menu_home: "Home"
+      menu_help: "Help"
+      menu_login: "Login"
+    footer:
+      content_footer: "The Ruby on Rails Tutorial"
+      author: "by Michael Hartl"
+      menu_contact: "Contact"
+      menu_about: "About"
+      menu_news: "News"
     shared:
-      header:
-        logo: "Sample App"
-        menu_home: "Home"
-        menu_contact: "Contact"
-        menu_help: "Help"
-        menu_login: "Login"
+      error_messages:
+        form_contain: "The form contains %{er_count}."
+        error: "error"
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        password_confirmation: "Confirmation"
+
+
+
