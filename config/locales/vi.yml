@@ -36,6 +36,7 @@ vi:
       header: "Đăng nhập vào ứng dụng mẫu"
       new_user: "Người dùng mới? "
       sign_up_now: "Đăng ký ngay!"
+      remember_me: "Ghi nhớ đăng nhập"
   layouts:
     application:
       base_title: "Khóa học Ruby on Rails với sample app"
