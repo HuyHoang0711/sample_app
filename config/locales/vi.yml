@@ -1,6 +1,7 @@
 vi:
   success: "Chào mừng đến với ứng dụng mẫu"
   has_no_user: "Không tìm thấy người dùng"
+  log_in_failed: "Đăng nhập thất bại!"
   static_pages:
     home:
       title: "Trang chủ"
@@ -33,6 +34,8 @@ vi:
     new:
       title: "Đăng nhập"
       header: "Đăng nhập vào ứng dụng mẫu"
+      new_user: "Người dùng mới? "
+      sign_up_now: "Đăng ký ngay!"
   layouts:
     application:
       base_title: "Khóa học Ruby on Rails với sample app"
@@ -41,6 +44,11 @@ vi:
       menu_home: "Trang chủ"
       menu_help: "Trợ giúp"
       menu_login: "Đăng nhập"
+      account: "Tài khoản"
+      user: "Người dùng"
+      profile: "Thông tin cá nhân"
+      setting: "Thiết lập"
+      logout: "Đăng xuất"
     footer:
       content_footer: "Khóa học Ruby on Rails"
       author: "thực hiện bởi Michael Hartl"

@@ -1,6 +1,7 @@
 en:
   success: "Welcome to the Sample App"
   has_no_user: "No result for showing user"
+  log_in_failed: "Log in failed!"
   static_pages:
     base_title: "Ruby on Rails Tutorial Sample App"
     home:
@@ -34,6 +35,8 @@ en:
     new:
       title: "Log in"
       header: "Log in to Sample App"
+      new_user: "New User? "
+      sign_up_now: "Sign up now!"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -42,6 +45,11 @@ en:
       menu_home: "Home"
       menu_help: "Help"
       menu_login: "Login"
+      account: "Account"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
     footer:
       content_footer: "The Ruby on Rails Tutorial"
       author: "by Michael Hartl"
