@@ -4,13 +4,14 @@ url:
   rails_help: "https://www.railstutorial.org/help"
   rails_news: "https://news.railstutorial.org/"
   author: "https://www.michaelhartl.com/"
-  gravatar:   "https://secure.gravatar.com/avatar/"
-
+  gravatar: "https://secure.gravatar.com/avatar/"
+  gravatar_email: "http://gravatar.com/emails"
 digits:
   digit_255: 255
   digit_50: 50
   digit_6: 6
 gravatar_size:
+  size_50: 50
   size_100: 100
 
 
