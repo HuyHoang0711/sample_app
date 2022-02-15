@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
 
+    resources :account_activations, only: :edit
+
     resource :static_pages do
       collection do
         get "/home", to: "static_pages#home"

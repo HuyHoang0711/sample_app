@@ -1,6 +1,9 @@
 en:
   success: "Welcome to the Sample App"
   failed: "Singup failed!"
+  activated_success: "Account activated!"
+  invalid_activation: "Invalid activation link!"
+  account_not_activated: "Account not activated. Check your email for the activation link."
   has_no_user: "No result for showing user"
   log_in_failed: "Log in failed!"
   success_profile: "Profile updated~"
@@ -10,11 +13,24 @@ en:
   danger_log_in: "Please log in"
   current_user: "You are not that user!"
   admin: "You are not admin!"
+  message_mail: "Please check your email to activate your account."
   pagy:
     nav:
       prev: "Previous"
       next: "Next"
       gap: "Gap"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      app_name: "Sample App"
+      greeting_name: "Hi %{user_name},"
+      greeting_activation: "Welcome to the Sample App! Click on
+                            the link below to activate your account:"
+      activate: "Activate"
+    password_reset:
+      subject: "Account reset password"
+      header: "Reset your password"
+      content: "Updating..."
   static_pages:
     base_title: "Ruby on Rails Tutorial Sample App"
     home:
