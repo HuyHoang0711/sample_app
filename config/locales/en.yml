@@ -1,7 +1,20 @@
 en:
   success: "Welcome to the Sample App"
+  failed: "Singup failed!"
   has_no_user: "No result for showing user"
   log_in_failed: "Log in failed!"
+  success_profile: "Profile updated~"
+  failed_profile: "Update failed!"
+  user_deleted: "User deleted!"
+  deleted_fail: "Delete fail!"
+  danger_log_in: "Please log in"
+  current_user: "You are not that user!"
+  admin: "You are not admin!"
+  pagy:
+    nav:
+      prev: "Previous"
+      next: "Next"
+      gap: "Gap"
   static_pages:
     base_title: "Ruby on Rails Tutorial Sample App"
     home:
@@ -26,11 +39,22 @@ en:
       inviting: "Contact me by phone number: "
       phone_number: "+1 (202) 861-0737"
   users:
+    user:
+      delete_button: "delete"
+      data_confirm: "You sure?"
     new:
       title: "New User"
       header1: "Sign up"
       content: "User has name, email and password!"
       submit_label: "Create my account"
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      save_changes: "Save changes"
+      change: "Change"
+    index:
+      title: "All users"
+      header: "All users"
   sessions:
     new:
       title: "Log in"

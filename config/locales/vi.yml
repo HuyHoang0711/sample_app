@@ -1,7 +1,20 @@
 vi:
   success: "Chào mừng đến với ứng dụng mẫu"
+  failed: "Đăng ký không thành công!"
   has_no_user: "Không tìm thấy người dùng"
   log_in_failed: "Đăng nhập thất bại!"
+  success_profile: "Cập nhập thông tin thành công~"
+  failed_profile: "Cập nhập thông tin thất bại!"
+  user_deleted: "Người dùng đã được xóa!"
+  deleted_fail: "Xóa người dùng thất bại!"
+  danger_log_in: "Vui lòng đăng nhập"
+  current_user: "Bạn không thể sửa thông tin người dùng khác!"
+  admin: "Tài khoản không có quyền quản trị!"
+  pagy:
+    nav:
+      prev: "Trước"
+      next: "Kế tiếp"
+      gap: "..."
   static_pages:
     home:
       title: "Trang chủ"
@@ -25,11 +38,22 @@ vi:
       inviting: "Liên hệ tôi theo số điện thoại: "
       phone_number: "+84 86679 5522"
   users:
+    user:
+      delete_button: "xóa"
+      data_confirm: "Bạn chắc chắn muốn xóa?"
     new:
       title: "Người dùng mới"
       header1: "Đăng ký"
       content: "Người dùng bao gồm họ tên, email và mật khẩu!"
       submit_label: "Tạo tài khoản mới"
+    edit:
+      title: "Sửa thông tin người dùng"
+      header: "Cập nhập thông tin của bạn"
+      save_changes: "Lưu thay đổi"
+      change: "Thay đổi"
+    index:
+      title: "Tất cả người dùng"
+      header: "Danh sách người dùng"
   sessions:
     new:
       title: "Đăng nhập"
