@@ -13,5 +13,10 @@ digits:
 gravatar_size:
   size_50: 50
   size_100: 100
+time:
+  expire:
+    two_hrs: 2
+
+
 
 

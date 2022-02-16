@@ -6,6 +6,7 @@ vi:
   account_not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm
                           tra đường dẫn kích hoạt trong email của bạn."
   has_no_user: "Không tìm thấy người dùng"
+  user_invalid: "Người dùng chưa được kích hoạt!"
   log_in_failed: "Đăng nhập thất bại!"
   success_profile: "Cập nhập thông tin thành công~"
   failed_profile: "Cập nhập thông tin thất bại!"
@@ -15,6 +16,12 @@ vi:
   current_user: "Bạn không thể sửa thông tin người dùng khác!"
   admin: "Tài khoản không có quyền quản trị!"
   message_mail: "Vui lòng kiểm tra email cá nhân để kích hoạt tài khoản."
+  reset_password_message: "Email được gửi cùng với hướng dẫn lấy lại mật khẩu"
+  email_not_found: "Không tìm thấy địa chỉ email"
+  update_password_success: "Cập nhập mật khẩu thành công."
+  update_password_failed: "Cập nhập mật khẩu thất bại!"
+  password_expired: "Lấy lại mật khẩu đã hết hạn"
+  password_blank: "không thể để trống!"
   pagy:
     nav:
       prev: "Trước"
@@ -31,7 +38,12 @@ vi:
     password_reset:
       subject: "Lấy lại mật khẩu của bạn"
       header: "Thiết lập lại mật khẩu của bạn"
-      content: "Đang cập nhập chức năng..."
+      reset_label: "Thiết lập lại mật khẩu"
+      construction_first: "Để lấy lại mật khẩu vui lòng nhấn
+                           vào liên kết bên dưới"
+      construction_second: "Liên kết này sẽ tồn tại trong 2 giờ."
+      content: "Nếu bạn không yêu cầu lấy lại mật khẩu,
+                vui lòng bỏ qua email này và mật khẩu bạn vẫn giữ nguyên."
   static_pages:
     home:
       title: "Trang chủ"
@@ -78,6 +90,15 @@ vi:
       new_user: "Người dùng mới? "
       sign_up_now: "Đăng ký ngay!"
       remember_me: "Ghi nhớ đăng nhập"
+      forgot_password: "Quên mật khẩu"
+  password_resets:
+    new:
+      forgot_password: "Quên mật khẩu"
+      submit_label: "Xác nhận"
+    edit:
+      header: "Lấy lại mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      update_label: "Cập nhập mật khẩu"
   layouts:
     application:
       base_title: "Khóa học Ruby on Rails với sample app"
