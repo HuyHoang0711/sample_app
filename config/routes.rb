@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
     resources :account_activations, only: :edit
 
+    resources :password_resets, except: %i(index show destroy)
+
     resource :static_pages do
       collection do
         get "/home", to: "static_pages#home"
