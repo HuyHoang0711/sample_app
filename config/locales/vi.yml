@@ -1,6 +1,10 @@
 vi:
   success: "Chào mừng đến với ứng dụng mẫu"
   failed: "Đăng ký không thành công!"
+  activated_success: "Kích hoạt tài khoản thành công!"
+  invalid_activation: "Đường dẫn kích hoạt không hợp lệ!"
+  account_not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm
+                          tra đường dẫn kích hoạt trong email của bạn."
   has_no_user: "Không tìm thấy người dùng"
   log_in_failed: "Đăng nhập thất bại!"
   success_profile: "Cập nhập thông tin thành công~"
@@ -10,11 +14,24 @@ vi:
   danger_log_in: "Vui lòng đăng nhập"
   current_user: "Bạn không thể sửa thông tin người dùng khác!"
   admin: "Tài khoản không có quyền quản trị!"
+  message_mail: "Vui lòng kiểm tra email cá nhân để kích hoạt tài khoản."
   pagy:
     nav:
       prev: "Trước"
       next: "Kế tiếp"
       gap: "..."
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản của bạn"
+      app_name: "Ứng dụng mẫu"
+      greeting_name: "Xin chào %{user_name},"
+      greeting_activation: "Chào mừng đến với ứng dụng mẫu! Nhấn vào
+                            liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
+    password_reset:
+      subject: "Lấy lại mật khẩu của bạn"
+      header: "Thiết lập lại mật khẩu của bạn"
+      content: "Đang cập nhập chức năng..."
   static_pages:
     home:
       title: "Trang chủ"

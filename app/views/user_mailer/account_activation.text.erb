@@ -1,0 +1,6 @@
+<%= t (".greeting_name"), user_name: @user.name %>
+
+<%= t(".greeting_activation") %>
+
+<%= edit_account_activation_url(id: @user.activation_token,
+                                email: @user.email) %>
