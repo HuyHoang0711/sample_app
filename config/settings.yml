@@ -16,6 +16,14 @@ gravatar_size:
 time:
   expire:
     two_hrs: 2
+image:
+  size_5: 5
+  limit_size_500: [500, 500]
+  format_valid: ["image/jpeg", "image/gif", "image/png"]
+  accept_image: "image/jpeg,image/gif,image/png"
+content:
+  character_140: 140
+
 
 
 

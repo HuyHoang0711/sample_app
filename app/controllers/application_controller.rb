@@ -10,6 +10,14 @@ class ApplicationController < ActionController::Base
     {locale: I18n.locale}
   end
 
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t("danger_log_in")
+    redirect_to login_url
+  end
+
   protect_from_forgery with: :exception
   include SessionsHelper
   include Pagy::Backend

@@ -1,0 +1,11 @@
+# Split context in several files.
+#
+# By default only one file with all translations is exported and
+# no configuration is required. Your settings for asset pipeline
+# are automatically recognized.
+#
+# If you want to split translations into several files or specify
+# locale contexts that will be exported, just use this file to do
+translations:
+  - file: "app/assets/javascripts/i18n/translations.js"
+    only: "*"

@@ -1,4 +1,8 @@
 en:
+  micropost_image:
+    alert:
+      size_invalid: "Maximum file size is 5MB.
+                     Please choose a smaller file."
   success: "Welcome to the Sample App"
   failed: "Signup failed!"
   activated_success: "Account activated!"
@@ -22,6 +26,13 @@ en:
   update_password_failed: "Update password failed!"
   password_expired: "Password reset has expired."
   password_blank: "can't be empty!"
+  micropost_create_success: "Micropost created!"
+  micropost_create_failed: "Create micropost failed!"
+  micropost_invalid: "Micropost invalid!"
+  micropost_delete_success: "Micropost deleted"
+  micropost_delete_failed: "Deleted fail!"
+  valid_image_format: "must be a valid image format"
+  valid_size_image: "should be less than %{count} MB"
   pagy:
     nav:
       prev: "Previous"
@@ -53,6 +64,7 @@ en:
       header2b: "Ruby on Rails Tutorial"
       header2c: "sample application."
       signup: "Sign up now!"
+      micropost_feed: "Micropost Feed"
     help:
       title: "Help"
       header_help: "Help"
@@ -84,6 +96,14 @@ en:
     index:
       title: "All users"
       header: "All users"
+    show:
+      micropost: "Microposts"
+  microposts:
+    micropost:
+      ago: "ago."
+      posted: "Posted"
+      mes_confirm: "Are you sure you want to delete this micropost?"
+      delete_label: "delete"
   sessions:
     new:
       title: "Log in"
@@ -123,12 +143,21 @@ en:
       error_messages:
         form_contain: "The form contains %{er_count}."
         error: "error"
+      user_info:
+        view_profile: "View my profile"
+        micropost: "micropost"
+      micropost_form:
+        compose_micropost: "Compose new micropost..."
+        post_label: "Post"
   activerecord:
     models:
       user: "User"
+      micropost: "Micropost"
     attributes:
       user:
         password_confirmation: "Confirmation"
+      micropost:
+        content: "Content"
 
 
 

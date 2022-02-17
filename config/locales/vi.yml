@@ -1,4 +1,8 @@
 vi:
+  micropost_image:
+    alert:
+      size_invalid: "Kích thước file ảnh tối đa là 5MB.
+                     Vui lòng chọn ảnh có kích thước nhỏ hơn."
   success: "Chào mừng đến với ứng dụng mẫu"
   failed: "Đăng ký không thành công!"
   activated_success: "Kích hoạt tài khoản thành công!"
@@ -22,6 +26,13 @@ vi:
   update_password_failed: "Cập nhập mật khẩu thất bại!"
   password_expired: "Lấy lại mật khẩu đã hết hạn"
   password_blank: "không thể để trống!"
+  micropost_create_success: "Tạo bài đăng nhanh thành công!"
+  micropost_create_failed: "Tạo bài đăng nhanh thất bại!"
+  micropost_invalid: "Bài đăng nhanh không hợp lệ!"
+  micropost_delete_success: "Xóa bài đăng thành công"
+  micropost_delete_failed: "Xóa bài đăng thất bại!"
+  valid_image_format: "có định dạng không hợp lệ!"
+  valid_size_image: "nên có dung lượng nhỏ hơn %{count} MB"
   pagy:
     nav:
       prev: "Trước"
@@ -44,6 +55,18 @@ vi:
       construction_second: "Liên kết này sẽ tồn tại trong 2 giờ."
       content: "Nếu bạn không yêu cầu lấy lại mật khẩu,
                 vui lòng bỏ qua email này và mật khẩu bạn vẫn giữ nguyên."
+  datetime:
+    distance_in_words:
+      less_than_x_minutes:
+        one: "dưới 1 phút "
+        other: "dưới %{count} phút"
+      x_minutes:
+        one: "1 phút"
+        other: "%{count} phút"
+      about_x_hours:
+        one: "1 giờ"
+        other: "%{count} giờ"
+
   static_pages:
     home:
       title: "Trang chủ"
@@ -52,6 +75,7 @@ vi:
       header2b: "khóa học Ruby on Rails"
       header2c: "sample application."
       signup: "Đăng ký ngay!"
+      micropost_feed: "Danh sách bài đăng nhanh"
     help:
       title: "Trợ giúp"
       header_help: "Trợ giúp"
@@ -83,6 +107,14 @@ vi:
     index:
       title: "Tất cả người dùng"
       header: "Danh sách người dùng"
+    show:
+      micropost: "Bài đăng nhanh"
+  microposts:
+    micropost:
+      posted: "Đã đăng"
+      ago: "trước."
+      mes_confirm: "Bạn chắc chắn muốn xóa bài đăng nhanh này?"
+      delete_label: "xóa"
   sessions:
     new:
       title: "Đăng nhập"
@@ -122,9 +154,16 @@ vi:
       error_messages:
         form_contain: "Biểu mẫu gồm có %{er_count}."
         error: "lỗi"
+      user_info:
+        view_profile: "Xem thông tin cá nhân"
+        micropost: "bài đăng nhanh"
+      micropost_form:
+        compose_micropost: "Soạn bài đăng mới..."
+        post_label: "Đăng"
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Bài đăng nhanh"
     attributes:
       user:
         name: "Họ tên"
@@ -133,6 +172,8 @@ vi:
         password_confirmation: "Xác nhận mật khẩu"
         created_at: "Ngày lập"
         updated_at: "Ngày cập nhập"
+      micropost:
+        content: "Nội dung"
     errors:
       models:
         user:
@@ -150,3 +191,11 @@ vi:
               too_short: "tối thiểu 6 ký tự!"
             password_confirmation:
               confirmation: "không trùng với mật khẩu!"
+        micropost:
+          attributes:
+            user_id:
+              blank: "không được để trống!"
+            content:
+              blank: "không được để trống!"
+              too_long: "không được vượt quá 140 ký tự!"
+
