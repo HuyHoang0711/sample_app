@@ -6,6 +6,9 @@ Rails.application.routes.draw do
     post "/signup", to: "users#create"
     resources :users do
       resources :microposts, only: %i(create destroy)
+      member do
+        get :following, :followers
+      end
     end
 
     get "/login", to: "sessions#new"
@@ -15,6 +18,8 @@ Rails.application.routes.draw do
     resources :account_activations, only: :edit
 
     resources :password_resets, except: %i(index show destroy)
+
+    resources :relationships, only: %i(create destroy)
 
     resource :static_pages do
       collection do

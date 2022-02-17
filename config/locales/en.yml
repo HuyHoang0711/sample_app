@@ -33,6 +33,8 @@ en:
   micropost_delete_failed: "Deleted fail!"
   valid_image_format: "must be a valid image format"
   valid_size_image: "should be less than %{count} MB"
+  following_title: "Following"
+  follower_title: "Followers"
   pagy:
     nav:
       prev: "Previous"
@@ -98,6 +100,12 @@ en:
       header: "All users"
     show:
       micropost: "Microposts"
+    show_follow:
+      view_profile: "View my profile"
+    follow:
+      follow_label: "Follow"
+    unfollow:
+      unfollow_label: "Unfollow"
   microposts:
     micropost:
       ago: "ago."

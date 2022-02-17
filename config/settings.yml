@@ -11,6 +11,7 @@ digits:
   digit_50: 50
   digit_6: 6
 gravatar_size:
+  size_30: 30
   size_50: 50
   size_100: 100
 time:
