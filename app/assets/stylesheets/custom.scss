@@ -112,6 +112,10 @@ aside {
       margin-top: 0px;
     }
   }
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
 }
 .gravatar {
   float: left;
@@ -183,4 +187,41 @@ input {
 }
 .button_delete {
   width: 50px;
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $unicorn_silver;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $light_gray;
+    display: block;
+    margin-left: 60px;
+  }
 }

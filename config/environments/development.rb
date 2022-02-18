@@ -31,4 +31,5 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
   config.assets.debug = true
   config.assets.quiet = true
+  config.middleware.use I18n::JS::Middleware
 end
