@@ -8,7 +8,7 @@ class MicropostsController < ApplicationController
       flash[:success] = t("micropost_create_success")
       redirect_to root_url
     else
-      @pagy, @feed_items = pagy(current_user.feed)
+      @pagy, @feed_items = pagy User.feed(merge_id)
       flash.now[:danger] = t("micropost_create_failed")
       render "static_pages/home"
     end

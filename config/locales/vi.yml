@@ -33,6 +33,8 @@ vi:
   micropost_delete_failed: "Xóa bài đăng thất bại!"
   valid_image_format: "có định dạng không hợp lệ!"
   valid_size_image: "nên có dung lượng nhỏ hơn %{count} MB"
+  following_title: "Đang theo dõi"
+  follower_title: "Người theo dõi"
   pagy:
     nav:
       prev: "Trước"
@@ -109,6 +111,12 @@ vi:
       header: "Danh sách người dùng"
     show:
       micropost: "Bài đăng nhanh"
+    show_follow:
+      view_profile: "Xem thông tin cá nhân"
+    follow:
+      follow_label: "Theo dõi"
+    unfollow:
+      unfollow_label: "Bỏ theo dõi"
   microposts:
     micropost:
       posted: "Đã đăng"
@@ -174,6 +182,7 @@ vi:
         updated_at: "Ngày cập nhập"
       micropost:
         content: "Nội dung"
+        image: "Ảnh"
     errors:
       models:
         user:
